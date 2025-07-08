@@ -1,13 +1,13 @@
-// Imports expressjs
+// Imports expressjs and noteifyRoutes
 import express from "express";
+import noteifyRoutes from "./routes/noteifyRoutes.js";
 
 // Initialises the express application
 const app = express();
 
-// API Get request, responding with simple text
-app.get("/api/notes", (req, res) => {
-    res.send("You have got 5 notes.");
-})
+// Sets the app to use noteifyRoutes when hitting an endpoint with 
+// /api/notes
+app.use("/api/notes", noteifyRoutes)
 
 // Listens to the PORT 5001 and logs it in the console
 app.listen(5001, () => {
