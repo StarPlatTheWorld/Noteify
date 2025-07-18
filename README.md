@@ -1,6 +1,6 @@
-## Noteify
+# Noteify
 
-# What is Noteify?
+## What is Noteify?
 
 Noteify, pronounced Notify, is a note-taking web application that lets users create notes for tasks throughout their day and allow them to have sufficient time-management and organization skills for their daily-life. Noteify is built utilising the MERN stack as it's quick, efficient, flexible, and has a wide range of community support.
 
