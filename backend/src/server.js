@@ -14,6 +14,9 @@ const PORT = process.env.PORT
 // Runs the external MongoDB connection script for connecting to the database
 connectDB();
 
+// Middleware
+app.use(express.json());
+
 // Sets the app to use noteifyRoutes when hitting an endpoint with 
 // /api/notes
 app.use("/api/notes", noteifyRoutes)
